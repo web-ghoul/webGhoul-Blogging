@@ -1,0 +1,192 @@
+.home .contain {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+}
+
+.home .contain {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../images//bg_1.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.home .contain .content {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+    z-index: 100;
+    gap: 50px;
+}
+
+.home .contain .content .text {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home .contain .content .text span {
+    font-size: 25px;
+}
+
+.home .contain .content .text span>span {
+    color: var(--main-color);
+}
+
+.home .contain .content .text h1 {
+    font-size: 120px;
+    font-weight: 800;
+    color: var(--main-color);
+}
+
+.home .contain .content .text p {
+    font-size: 20px;
+    width: 60%;
+    line-height: 1.5;
+}
+
+.home .contain .content .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.home .contain .content .buttons button {
+    font-size: 20px;
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 8px 30px;
+    border-radius: 10px;
+    border: 3px solid var(--main-color);
+}
+
+.home .contain .content .buttons button:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media (max-width:1200px) {
+    .home .contain {
+        gap: 40px;
+    }
+    .home .contain .content {
+        justify-content: flex-start;
+        gap: 40px;
+    }
+    .home .contain .content .text {
+        justify-content: flex-start;
+    }
+    .home .contain .content .text span {
+        font-size: 24px;
+    }
+    .home .contain .content .text h1 {
+        font-size: 110px;
+    }
+    .home .contain .content .text p {
+        font-size: 20px;
+        width: 70%;
+    }
+    .home .contain .content .buttons {
+        justify-content: flex-start;
+        gap: 25px;
+    }
+    .home .contain .content .buttons button {
+        font-size: 20px;
+        padding: 8px 30px;
+        border-radius: 9px;
+    }
+}
+
+@media (max-width:992px) {
+    .home .contain {
+        gap: 30px;
+    }
+    .home .contain .content {
+        justify-content: flex-start;
+        gap: 30px;
+    }
+    .home .contain .content .text {
+        justify-content: flex-start;
+    }
+    .home .contain .content .text span {
+        font-size: 22px;
+    }
+    .home .contain .content .text h1 {
+        font-size: 80px;
+    }
+    .home .contain .content .text p {
+        font-size: 18px;
+        width: 80%;
+    }
+    .home .contain .content .buttons {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .home .contain .content .buttons button {
+        font-size: 18px;
+        padding: 6px 25px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width:768px) {
+    .home .contain {
+        gap: 20px;
+    }
+    .home .contain .content {
+        justify-content: center;
+        gap: 25px;
+    }
+    .home .contain .content .text {
+        justify-content: center;
+    }
+    .home .contain .content .text span {
+        font-size: 20px;
+    }
+    .home .contain .content .text h1 {
+        font-size: 70px;
+        text-align: center;
+    }
+    .home .contain .content .text p {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+    .home .contain .content .buttons {
+        justify-content: center;
+    }
+    .home .contain .content .buttons button {
+        font-size: 16px;
+        padding: 5px 22px;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width:640px) {
+    .home .contain .content .text {
+        text-align: center;
+    }
+    .home .contain .content .text span {
+        font-size: 16px;
+    }
+    .home .contain .content .text p {
+        font-size: 12px;
+    }
+    .home .contain .content .text h1 {
+        font-size: 45px;
+    }
+    .home .contain .content .buttons button {
+        font-size: 12px;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,404 @@
+footer .contain {
+    background-color: var(--blk-color);
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer .contain .parts {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 25% 30% 15% 20%;
+    gap: 30px;
+}
+
+footer .contain .parts .part {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    align-self: flex-start;
+}
+
+footer .contain .parts .part .logo {
+    color: var(--wt-color);
+}
+
+footer .contain .parts .part .head {
+    font-size: 25px;
+    color: var(--wt-color);
+}
+
+footer .contain .parts .part>p {
+    color: var(--gray-color);
+    font-size: 18px;
+}
+
+footer .contain .parts .part .icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+footer .contain .parts .part .icons i {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blk-color-alt);
+}
+
+footer .contain .parts .part .icons i svg {
+    font-size: 32px;
+    color: var(--wt-color);
+    padding: 5px;
+}
+
+footer .contain .parts .part .icons i svg:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+footer .contain .parts .part .blogs {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+footer .contain .parts .part .blogs .blog {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+footer .contain .parts .part .blogs .blog picture {
+    width: 220px;
+}
+
+footer .contain .parts .part .blogs .blog picture img {
+    width: 100%;
+}
+
+footer .contain .parts .part .blogs .blog .content {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+footer .contain .parts .part .blogs .blog .content p {
+    font-size: 14px;
+    color: var(--gray-color);
+    transition: var(--trans);
+}
+
+footer .contain .parts .part .blogs .blog .content .date {
+    color: gray;
+    font-size: 12px;
+}
+
+footer .contain .parts .part .lists {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer .contain .parts .part .lists li {
+    position: relative;
+    transform: translateX(30px);
+    color: var(--wt-color);
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+footer .contain .parts .part .lists li:first-child {
+    padding-top: 0;
+}
+
+footer .contain .parts .part .lists li a {
+    color: var(--wt-color);
+}
+
+footer .contain .parts .part .lists li i {
+    position: absolute;
+    transform: translateX(-30px);
+    color: var(--wt-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .contain .parts .part .lists li:hover {
+    transform: translateX(50px);
+    cursor: pointer;
+}
+
+footer .contain .parts .part .lists li:hover i,
+footer .contain .parts .part .lists li:hover a {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+footer .contain .parts .part .questions {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+footer .contain .parts .part .questions .ques {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 18px;
+    color: var(--wt-color);
+}
+
+footer .contain .parts .part .questions .ques:not(:first-child) p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--main-color);
+}
+
+footer .contain .parts .part .questions .ques i svg {
+    color: var(--wt-color);
+}
+
+footer .contain .parts .part .questions .ques:first-child>p {
+    color: var(--gray-color);
+}
+
+footer .contain .copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-color);
+    font-size: 20px;
+    gap: 5px;
+}
+
+@media (max-width:1200px) {
+    footer .contain {
+        gap: 40px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    footer .contain .parts {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    footer .contain .parts .part {
+        justify-content: flex-start;
+        gap: 25px;
+        align-self: flex-start;
+    }
+    footer .contain .parts .part .head {
+        font-size: 24px;
+    }
+    footer .contain .parts .part>p {
+        font-size: 17px;
+    }
+    footer .contain .parts .part .icons {
+        justify-content: flex-start;
+    }
+    footer .contain .parts .part .icons i {
+        width: 45px;
+        height: 45px;
+    }
+    footer .contain .parts .part .icons i svg {
+        font-size: 31px;
+    }
+    footer .contain .parts .part .blogs {
+        justify-content: flex-start;
+    }
+    footer .contain .parts .part .blogs .blog {
+        align-items: flex-start;
+    }
+    footer .contain .parts .part .blogs .blog picture {
+        width: 220px;
+    }
+    footer .contain .parts .part .blogs .blog .content {
+        justify-content: flex-start;
+    }
+    footer .contain .parts .part .blogs .blog .content p {
+        font-size: 13px;
+    }
+    footer .contain .parts .part .blogs .blog .content .date {
+        font-size: 12px;
+    }
+    footer .contain .parts .part .lists {
+        justify-content: flex-start;
+    }
+    footer .contain .parts .part .lists li {
+        transform: translateX(25px);
+        font-size: 17px;
+        padding: 20px 0;
+    }
+    footer .contain .parts .part .lists li i {
+        transform: translateX(-25px);
+    }
+    footer .contain .parts .part .lists li:hover {
+        transform: translateX(40px);
+        cursor: pointer;
+    }
+    footer .contain .parts .part .questions {
+        justify-content: flex-start;
+        gap: 25px;
+    }
+    footer .contain .parts .part .questions .ques {
+        justify-content: flex-start;
+        font-size: 17px;
+    }
+    footer .contain .copy {
+        font-size: 19px;
+    }
+}
+
+@media (max-width:992px) {
+    footer .contain {
+        gap: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    footer .contain .parts {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    footer .contain .parts .part {
+        gap: 20px;
+    }
+    footer .contain .parts .part .head {
+        font-size: 22px;
+    }
+    footer .contain .parts .part>p {
+        font-size: 16px;
+    }
+    footer .contain .parts .part .icons i {
+        width: 40px;
+        height: 40px;
+    }
+    footer .contain .parts .part .icons i svg {
+        font-size: 28px;
+    }
+    footer .contain .parts .part .blogs .blog picture {
+        width: 200px;
+    }
+    footer .contain .parts .part .lists li {
+        transform: translateX(20px);
+        font-size: 16px;
+        padding: 15px 0;
+    }
+    footer .contain .parts .part .lists li i {
+        transform: translateX(-25px);
+    }
+    footer .contain .parts .part .lists li:hover {
+        transform: translateX(30px);
+        cursor: pointer;
+    }
+    footer .contain .parts .part .questions {
+        gap: 20px;
+    }
+    footer .contain .parts .part .questions .ques {
+        font-size: 16px;
+    }
+    footer .contain .copy {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:768px) {
+    footer .contain {
+        gap: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    footer .contain .parts {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    footer .contain .parts .part {
+        gap: 15px;
+    }
+    footer .contain .parts .part .head {
+        font-size: 20px;
+    }
+    footer .contain .parts .part>p {
+        font-size: 14px;
+    }
+    footer .contain .parts .part .icons i {
+        width: 30px;
+        height: 30px;
+    }
+    footer .contain .parts .part .icons i svg {
+        font-size: 25px;
+    }
+    footer .contain .parts .part .blogs {
+        gap: 15px;
+    }
+    footer .contain .parts .part .blogs .blog {
+        gap: 10px;
+    }
+    footer .contain .parts .part .blogs .blog picture {
+        width: 180px;
+    }
+    footer .contain .parts .part .lists li {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    footer .contain .parts .part .lists li:hover {
+        transform: translateX(25px);
+    }
+    footer .contain .parts .part .questions .ques {
+        font-size: 14px;
+    }
+    footer .contain .copy {
+        font-size: 16px;
+        text-align: center;
+        gap: 0px;
+    }
+}
+
+@media (max-width:640px) {
+    footer .contain .parts .part .head {
+        font-size: 16px;
+    }
+    footer .contain .parts .part>p {
+        font-size: 10px;
+    }
+    footer .contain .parts .part .icons i {
+        width: 20px;
+        height: 20px;
+    }
+    footer .contain .parts .part .icons i svg {
+        font-size: 20px;
+    }
+    footer .contain .parts .part .blogs .blog picture {
+        width: 140px;
+    }
+    footer .contain .parts .part .lists li {
+        font-size: 10px;
+        padding: 10px 0;
+    }
+    footer .contain .parts .part .lists li:hover {
+        transform: translateX(25px);
+    }
+    footer .contain .parts .part .questions .ques {
+        font-size: 10px;
+    }
+    footer .contain .copy {
+        font-size: 12px;
+        text-align: center;
+        gap: 0px;
+    }
+}

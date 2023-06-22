@@ -1,0 +1,338 @@
+.sign-in .contain {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.sign-in .contain picture {
+    width: 250px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.sign-in .contain picture .overlay {
+    opacity: 0.3;
+}
+
+.sign-in .contain picture img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: scale(1.5);
+}
+
+.sign-in .contain picture h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-200%);
+    font-size: 40px;
+    z-index: 100;
+    color: var(--wt-color);
+    font-weight: 600;
+}
+
+.sign-in .contain form {
+    position: relative;
+    z-index: 100;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--wt-color);
+    padding: 60px;
+    gap: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.sign-in .contain form>h1 {
+    display: none;
+}
+
+.sign-in .contain form>div {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.sign-in .contain form>div label {
+    font-size: 20px;
+}
+
+.sign-in .contain form>div input {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid var(--gray-color-alt);
+    width: 400px;
+}
+
+.sign-in .contain form>div.btns {
+    display: flex;
+    gap: 20px;
+}
+
+.sign-in .contain form>div.btns button {
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.sign-in .contain form>div.btns button:nth-of-type(2) {
+    font-size: 30px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid var(--blue-color);
+}
+
+.sign-in .contain form>div.btns button:first-child {
+    background-color: var(--blue-color);
+    padding: 10px 30px;
+    color: var(--wt-color);
+    border: 2px solid var(--blue-color);
+}
+
+.sign-in .contain form>div.btns button:hover,
+.sign-in .contain form>div.btns button a:hover {
+    color: var(--blue-color);
+    background-color: var(--wt-color);
+}
+
+.sign-in .contain form>div.btns span {
+    font-weight: 800;
+}
+
+@media (max-width:1200px) {
+    .sign-in .contain {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .sign-in .contain picture {
+        width: 300px;
+    }
+    .sign-in .contain picture img {
+        transform: scale(1.2);
+    }
+    .sign-in .contain picture h1 {
+        font-size: 35px;
+    }
+    .sign-in .contain form {
+        padding: 45px;
+        gap: 20px;
+    }
+    .sign-in .contain form>div label {
+        font-size: 19px;
+    }
+    .sign-in .contain form>div input {
+        font-size: 17px;
+        width: 360px;
+    }
+    .sign-in .contain form>div.btns {
+        gap: 20px;
+    }
+    .sign-in .contain form>div.btns button {
+        font-size: 17px;
+        border-radius: 4px;
+    }
+    .sign-in .contain form>div.btns button:nth-of-type(2) {
+        font-size: 28px;
+        width: 40px;
+        height: 40px;
+    }
+    .sign-in .contain form>div.btns button:first-child {
+        padding: 9px 28px;
+    }
+    .sign-in .contain form>div.gender .radio>div input::after {
+        width: 10px;
+        height: 10px;
+        border: 2px solid var(--gray-color-alt);
+    }
+    .sign-in .contain form>div.gender .radio>div input::before {
+        width: 7px;
+        height: 7px;
+    }
+    .sign-in .contain form>div.google button {
+        gap: 10px;
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+    .sign-in .contain form>div.google button span {
+        font-size: 19px;
+    }
+    .sign-in .contain form>div.google button svg {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:992px) {
+    .sign-in .contain {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .sign-in .contain picture {
+        width: 280px;
+    }
+    .sign-in .contain picture img {
+        transform: scale(1.1);
+    }
+    .sign-in .contain picture h1 {
+        font-size: 32px;
+    }
+    .sign-in .contain form {
+        padding: 40px;
+        gap: 18px;
+    }
+    .sign-in .contain form>div label {
+        font-size: 18px;
+    }
+    .sign-in .contain form>div input {
+        font-size: 16px;
+        width: 340px;
+    }
+    .sign-in .contain form>div.btns {
+        gap: 18px;
+    }
+    .sign-in .contain form>div.btns button {
+        font-size: 18px;
+        border-radius: 3px;
+    }
+    .sign-in .contain form>div.btns button:nth-of-type(2) {
+        font-size: 26px;
+        width: 35px;
+        height: 35px;
+    }
+    .sign-in .contain form>div.btns button:first-child {
+        padding: 8px 25px;
+    }
+    .sign-in .contain form>div.gender .radio>div input::after {
+        width: 9px;
+        height: 9px;
+    }
+    .sign-in .contain form>div.gender .radio>div input::before {
+        width: 5px;
+        height: 5px;
+    }
+    .sign-in .contain form>div.google button {
+        gap: 10px;
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+    .sign-in .contain form>div.google button span {
+        font-size: 18px;
+    }
+    .sign-in .contain form>div.google button svg {
+        font-size: 26px;
+    }
+}
+
+@media (max-width:768px) {
+    .sign-in .contain {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .sign-in .contain picture {
+        width: 260px;
+    }
+    .sign-in .contain picture h1 {
+        font-size: 30px;
+    }
+    .sign-in .contain form {
+        padding: 30px;
+        gap: 15px;
+    }
+    .sign-in .contain form>div label {
+        font-size: 16px;
+    }
+    .sign-in .contain form>div input {
+        font-size: 14px;
+        width: 320px;
+    }
+    .sign-in .contain form>div.btns {
+        gap: 15px;
+    }
+    .sign-in .contain form>div.btns button {
+        font-size: 16px;
+    }
+    .sign-in .contain form>div.btns button:nth-of-type(2) {
+        font-size: 26px;
+        width: 30px;
+        height: 30px;
+    }
+    .sign-in .contain form>div.btns button:first-child {
+        padding: 6px 20px;
+    }
+    .sign-in .contain form>div.google button {
+        gap: 8px;
+        padding: 4px 8px;
+        border-radius: 3px;
+    }
+    .sign-in .contain form>div.google button span {
+        font-size: 16px;
+    }
+    .sign-in .contain form>div.google button svg {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:640px) {
+    .sign-in .contain {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .sign-in .contain picture {
+        width: 260px;
+        display: none;
+    }
+    .sign-in .contain form {
+        padding: 25px;
+        gap: 10px;
+    }
+    .sign-in .contain form>div {
+        gap: 5px;
+    }
+    .sign-in .contain form>div label {
+        font-size: 14px;
+    }
+    .sign-in .contain form>div input {
+        font-size: 12px;
+        width: 240px;
+        padding: 5px;
+    }
+    .sign-in .contain form>div.btns {
+        gap: 7px;
+        justify-content: center;
+    }
+    .sign-in .contain form>div.btns span {
+        font-size: 10px;
+    }
+    .sign-in .contain form>div.btns button {
+        font-size: 14px;
+    }
+    .sign-in .contain form>div.btns button:nth-of-type(2) {
+        font-size: 20px;
+        width: 35px;
+        height: 30px;
+    }
+    .sign-in .contain form>div.btns button:first-child {
+        padding: 4px 18px;
+    }
+    .sign-in .contain form>div.google button {
+        gap: 6px;
+        padding: 5px 6px;
+    }
+    .sign-in .contain form>div.google button span {
+        font-size: 14px;
+    }
+    .sign-in .contain form>div.google button svg {
+        font-size: 20px;
+    }
+}

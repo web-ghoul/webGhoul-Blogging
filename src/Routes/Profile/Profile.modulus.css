@@ -1,0 +1,272 @@
+.profile .contain {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+.profile .contain .back {
+    background-image: url("../../images//back-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.profile .contain .back picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: -25%;
+    transform: translateX(-50%);
+}
+
+.profile .contain .back picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile .contain .info {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile .contain .info .name {
+    font-size: 30px;
+    text-align: center;
+}
+
+.profile .contain .create-blog {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    gap: 30px;
+}
+
+.profile .contain .create-blog form {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    gap: 20px;
+}
+
+.profile .contain .create-blog form textarea {
+    width: 100%;
+    height: 150px;
+    outline: none;
+    border: 1px solid var(--gray-color-alt);
+    transition: var(--trans);
+    font-size: 20px;
+    padding: 10px;
+}
+
+.profile .contain .create-blog form button {
+    padding: 10px 30px;
+    font-size: 20px;
+    color: var(--wt-color);
+    background-color: var(--blue-color);
+    border-radius: 30px;
+    width: fit-content;
+    transition: var(--trans);
+    border: 2px solid var(--blue-color);
+}
+
+.profile .contain .create-blog form button:hover {
+    background-color: var(--wt-color);
+    color: var(--blue-color);
+}
+
+.profile .contain .blogs {
+    display: grid;
+    align-items: center;
+    gap: 30px;
+    justify-content: stretch;
+}
+
+.profile .contain h3.head {
+    font-size: 25px;
+    position: relative;
+}
+
+.profile .contain h3.head::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 5px;
+    background-color: var(--main-color);
+}
+
+.profile .contain .blogs>article {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    gap: 30px;
+}
+
+@media (max-width:1200px) {
+    .profile .contain {
+        gap: 45px;
+        padding-bottom: 40px;
+    }
+    .profile .contain .back {
+        height: 280px;
+        margin-bottom: 40px;
+    }
+    .profile .contain .back picture {
+        width: 160px;
+        height: 160px;
+    }
+    .profile .contain .info {
+        gap: 20px;
+    }
+    .profile .contain .info .name {
+        font-size: 28px;
+    }
+    .profile .contain .create-blog {
+        gap: 25px;
+    }
+    .profile .contain .create-blog form {
+        gap: 20px;
+    }
+    .profile .contain .create-blog form textarea {
+        height: 140px;
+        font-size: 19px;
+    }
+    .profile .contain .create-blog form button {
+        padding: 10px 25px;
+        font-size: 20px;
+    }
+    .profile .contain .blogs {
+        gap: 25px;
+    }
+    .profile .contain h3.head {
+        font-size: 22px;
+    }
+    .profile .contain h3.head::after {
+        bottom: -5px;
+        width: 40px;
+        height: 5px;
+    }
+    .profile .contain .blogs>article {
+        gap: 25px;
+    }
+}
+
+@media (max-width:992px) {
+    .profile .contain {
+        gap: 40px;
+        padding-bottom: 30px;
+    }
+    .profile .contain .back {
+        height: 260px;
+        margin-bottom: 30px;
+    }
+    .profile .contain .back picture {
+        width: 140px;
+        height: 140px;
+    }
+    .profile .contain .info .name {
+        font-size: 26px;
+    }
+    .profile .contain .create-blog {
+        gap: 20px;
+    }
+    .profile .contain .create-blog form {
+        gap: 15px;
+    }
+    .profile .contain .create-blog form textarea {
+        height: 130px;
+        font-size: 18px;
+    }
+    .profile .contain .create-blog form button {
+        padding: 8px 20px;
+        font-size: 18px;
+    }
+    .profile .contain .blogs {
+        gap: 20px;
+    }
+    .profile .contain h3.head {
+        font-size: 20px;
+    }
+    .profile .contain h3.head::after {
+        bottom: -5px;
+        height: 4px;
+    }
+    .profile .contain .blogs>article {
+        gap: 20px;
+    }
+}
+
+@media (max-width:768px) {
+    .profile .contain {
+        gap: 30px;
+        padding-bottom: 25px;
+    }
+    .profile .contain .back {
+        height: 240px;
+        margin-bottom: 25px;
+    }
+    .profile .contain .back picture {
+        width: 120px;
+        height: 120px;
+    }
+    .profile .contain .info .name {
+        font-size: 24px;
+    }
+    .profile .contain .create-blog form textarea {
+        height: 120px;
+        font-size: 16px;
+    }
+    .profile .contain .create-blog form button {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+    .profile .contain h3.head {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:640px) {
+    .profile .contain {
+        gap: 30px;
+        padding-bottom: 25px;
+    }
+    .profile .contain .back {
+        height: 200px;
+        margin-bottom: 35px;
+    }
+    .profile .contain .back picture {
+        width: 100px;
+        height: 100px;
+    }
+    .profile .contain .info {
+        gap: 5px;
+        text-align: center;
+    }
+    .profile .contain .info .name {
+        font-size: 22px;
+    }
+    .profile .contain .info h3 {
+        font-size: 10px;
+    }
+    .profile .contain .create-blog form textarea {
+        height: 120px;
+        font-size: 16px;
+    }
+    .profile .contain .create-blog form button {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+    .profile .contain h3.head {
+        font-size: 18px;
+    }
+}

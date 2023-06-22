@@ -1,0 +1,136 @@
+header .contain {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: var(--wt-color);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header .contain.rel {
+    position: relative !important;
+    color: var(--blk-color);
+}
+
+header .contain.active {
+    background-color: var(--wt-color);
+    color: var(--blk-color);
+    position: fixed !important;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+header .contain .lists {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+header .contain .lists li a {
+    font-size: 20px;
+    color: var(--wt-color);
+}
+
+header .contain.rel .lists li a {
+    color: var(--blk-color);
+}
+
+header .contain .lists li a:hover {
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+header .contain.rel .lists li a:hover {
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+header .contain.active .lists li a {
+    font-size: 20px;
+    color: var(--blk-color);
+}
+
+header .contain.active .lists li a:hover {
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+@media (max-width:1200px) {
+    header .contain {
+        gap: 28px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+    header .contain .lists {
+        gap: 40px;
+    }
+    header .contain .lists li a {
+        font-size: 19px;
+    }
+    header .contain.active .lists li a {
+        font-size: 19px;
+    }
+}
+
+@media (max-width:992px) {
+    header .contain {
+        gap: 25px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    header .contain .lists {
+        gap: 30px;
+    }
+    header .contain .lists li a {
+        font-size: 18px;
+    }
+    header .contain.active .lists li a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:768px) {
+    header .contain {
+        display: grid;
+        justify-content: center;
+        gap: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    header .contain .logo {
+        justify-content: center;
+    }
+    header .contain .lists {
+        justify-content: center;
+        gap: 25px;
+    }
+    header .contain .lists li a {
+        font-size: 16px;
+    }
+    header .contain.active .lists li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:640px) {
+    header .contain {
+        gap: 10px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    header .contain .lists {
+        gap: 20px;
+    }
+    header .contain .lists li a {
+        font-size: 12px;
+    }
+    header .contain.active .lists li a {
+        font-size: 12px;
+    }
+}
